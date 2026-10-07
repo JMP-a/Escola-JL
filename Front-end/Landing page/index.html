@@ -1,0 +1,398 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Duck Dot</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <style>
+        .cards-giman .card{
+    background: #1b1b1b;
+    border: 1px solid #5a5a5a;
+    border-radius: 18px;
+    transition: all .3s ease;
+    overflow: hidden;
+}
+
+.cards-giman .card:hover{
+    transform: translateY(-8px);
+    box-shadow: 0 15px 30px rgba(0,0,0,.5) !important;
+    border-color: #bdbdbd;
+}
+
+.cards-giman .card-body{
+    padding: 35px 25px;
+}
+
+.cards-giman .card-title{
+    color: #ffffff;
+    font-weight: bold;
+    font-size: 1.6rem;
+    margin-bottom: 20px;
+}
+
+.cards-giman .card-text{
+    color: #d0d0d0;
+    line-height: 1.8;
+}
+
+.cards-giman .btn{
+    background: #5a5a5a;
+    color: #fff;
+    border: none;
+    border-radius: 30px;
+    padding: 10px 28px;
+    transition: .3s;
+}
+
+.cards-giman .btn:hover{
+    background: #ffffff;
+    color: #000;
+    transform: scale(1.05);
+}
+
+.cards-giman .card::before{
+    content: "";
+    display: block;
+    width: 100%;
+    height: 6px;
+    background: linear-gradient(90deg,#ffffff,#8b8b8b,#ffffff);
+}
+    
+        *{
+            margin:0;
+            padding:0;
+            box-sizing:border-box;
+            font-family:Arial, Helvetica, sans-serif;
+        }
+
+        body{
+            background:#0d0d0d;
+            color:#fff;
+        }
+
+
+        .navbar{
+            background:#111 !important;
+            border-bottom:1px solid #444;
+        }
+
+        .navbar-brand{
+            color:#fff !important;
+            font-size:2rem;
+            letter-spacing:2px;
+        }
+
+        .navbar-brand img{
+            width:130px;
+            height:130px;
+            object-fit:cover;
+            border-radius:50%;
+            border:3px solid #fff;
+        }
+
+        .nav-link{
+            color:#d6d6d6 !important;
+            transition:.3s;
+        }
+
+        .nav-link:hover{
+            color:#fff !important;
+        }
+
+        .hero{
+            min-height:70vh;
+            display:flex;
+            align-items:center;
+            justify-content:center;
+            text-align:center;
+            background:linear-gradient(180deg,#1b1b1b,#0d0d0d);
+            padding:100px 0;
+        }
+
+        .hero h1{
+            font-size:4rem;
+            font-weight:bold;
+            letter-spacing:3px;
+        }
+
+        .hero p{
+            color:#d0d0d0;
+            font-size:1.2rem;
+        }
+
+        .btn-light{
+            background:#fff;
+            color:#111;
+            border:none;
+            transition:.3s;
+        }
+
+        .btn-light:hover{
+            background:#d6d6d6;
+            color:#000;
+        }
+
+        .bg-dark{
+            background:#161616 !important;
+        }
+
+        .carousel-inner{
+            border-radius:15px;
+            overflow:hidden;
+            border:2px solid #444;
+        }
+
+        .carousel-item img{
+            width:100%;
+            height:500px;
+            object-fit:cover;
+            filter:brightness(.75);
+            transition:.4s;
+        }
+
+        .carousel-item img:hover{
+            filter:brightness(.9);
+        }
+
+        .carousel-caption{
+            background:rgba(0,0,0,.45);
+            border-radius:10px;
+            padding:10px;
+        }
+
+        footer{
+            background:#111;
+            border-top:1px solid #444;
+            color:#d6d6d6;
+            padding:25px;
+        }
+
+        footer p{
+            margin:0;
+        }
+      
+        p{
+            margin: 25px;
+        }
+        
+      
+        
+
+    </style>
+
+</head>
+
+<body>
+
+    <div class="container d-flex flex-column">
+
+        <a href="#" class="navbar-brand text-center mb-3">
+            <img src="Fotos/Duck logo.jpeg" alt="Logo Bar Giman">
+        </a>
+    </div>
+
+<section class="hero">
+
+    <div class="container">
+
+        <h1>Duck Dot</h1>
+
+        <p class="lead my-4">
+            Sewing with You
+        </p>
+        
+         <div class="row g-4 cards-giman">
+
+    <div class="col-md-4">
+        <div class="card shadow h-100">
+            <div class="card-body text-center">
+                <h5 class="card-title">Sobre</h5>
+
+                <p class="card-text">
+                    Ponto Pato is a social network entirely focused on the handicrafts of knitting, crocheting,
+                </p>
+
+                <a href="sobre1.html" class="btn btn-lg mt-4">
+                    Saiba mais
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <div class="col-md-4">
+        <div class="card shadow h-100">
+            <div class="card-body text-center">
+                <h5 class="card-title">Contato</h5>
+
+                <p class="card-text">
+                    Nosso diferencial é oferecer uma experiência exclusiva em um
+                    espaço moderno, com design elegante em tons de preto e
+                    atendimento personalizado.
+                </p>
+
+                <a href="contato1.html" class="btn btn-lg mt-4">
+                    Mais informações
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <div class="col-md-4">
+        <div class="card shadow h-100">
+            <div class="card-body text-center">
+                <h5 class="card-title">Cardápio</h5>
+
+                <p class="card-text">
+                    Com um cardápio variado, de bebidas nacionais às importadas,
+                    além de uma culinária refinada para todos os gostos.
+                </p>
+
+                <a href="index.html" class="btn btn-lg mt-4">
+                    Ver Cardápio
+                </a>
+            </div>
+        </div>
+    </div>
+
+</div>
+
+</div>
+
+    </div>
+
+</section>
+
+
+    
+<section class="py-5 bg-dark">
+
+    <div class="container">
+
+        <h2 class="text-center mb-5 fw-bold">
+            Conheça nosso ambiente
+        </h2>
+
+        <div id="carouselBar"
+             class="carousel slide"
+             data-bs-ride="carousel"
+             data-bs-interval="3000">
+
+            <div class="carousel-indicators">
+
+                <button type="button"
+                        data-bs-target="#carouselBar"
+                        data-bs-slide-to="0"
+                        class="active">
+                </button>
+
+                <button type="button"
+                        data-bs-target="#carouselBar"
+                        data-bs-slide-to="1">
+                </button>
+
+                <button type="button"
+                        data-bs-target="#carouselBar"
+                        data-bs-slide-to="2">
+                </button>
+
+                <button type="button"
+                        data-bs-target="#carouselBar"
+                        data-bs-slide-to="3">
+                </button>
+
+            </div>
+
+            <div class="carousel-inner">
+
+                <div class="carousel-item active">
+
+                    <img src="https://www.evino.com.br/blog/wp-content/uploads/2020/04/drinks-header-960x540.jpg" class="d-block w-100" alt="Imagem 1">
+
+                    <div class="carousel-caption">
+                        <h4>Drinks Exclusivos</h4>
+                        <p>Os melhores sabores preparados para você</p>
+                    </div>
+
+                </div>
+
+                <div class="carousel-item">
+
+                    <img src="https://viagem.cnnbrasil.com.br/wp-content/uploads/sites/5/2025/06/Bar-Counter-1.jpg?w=1200&h=900&crop=0" class="d-block w-100" alt="Imagem 2">
+
+                    <div class="carousel-caption">
+                        <h4>Ambiente Sofisticado</h4>
+                        <p>Conforto e elegância em cada detalhe</p>
+                    </div>
+
+                </div>
+
+                <div class="carousel-item">
+
+                    <img src="https://www.academiaassai.com.br/sites/default/files/styles/noticia_1020x640/public/petiscos_para_festas_de_fim_de_ano_salmao.jpg?itok=oMlKVdjo" class="d-block w-100" alt="Imagem 3">
+
+                    <div class="carousel-caption">
+                        <h4>Petiscos Especiais</h4>
+                        <p>Perfeitos para acompanhar sua bebida</p>
+                    </div>
+
+                </div>
+
+                <div class="carousel-item">
+
+                    <img src="https://cdnm.westwing.com.br/glossary/uploads/br/2022/03/22154704/bares-vila-madalena-grupo-brindando-unsplash.jpg" class="d-block w-100" alt="Imagem 4">
+
+                    <div class="carousel-caption">
+                        <h4>Momentos Inesquecíveis</h4>
+                        <p>Reúna seus amigos no Bar Giman</p>
+                    </div>
+
+                </div>
+
+            </div>
+
+            <button class="carousel-control-prev"
+                    type="button"
+                    data-bs-target="#carouselBar"
+                    data-bs-slide="prev">
+
+                <span class="carousel-control-prev-icon"></span>
+
+            </button>
+
+            <button class="carousel-control-next"
+                    type="button"
+                    data-bs-target="#carouselBar"
+                    data-bs-slide="next">
+
+                <span class="carousel-control-next-icon"></span>
+
+            </button>
+
+        </div>
+
+    </div>
+
+</section>
+
+<footer class="text-center">
+
+    <div class="container">
+
+        <hr class="border-secondary">
+
+        <p class="mb-0">
+            © 2026 Bar Giman 
+        </p>
+
+    </div>
+
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>

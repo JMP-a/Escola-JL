@@ -1,0 +1,404 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Bar Giman</title>
+
+<link rel="stylesheet" href="style.css">
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Arial,Helvetica,sans-serif;
+}
+
+body{
+background:#111;
+color:white;
+}
+
+header{
+height:60vh;
+background:linear-gradient(rgba(0,0,0,.6),rgba(0,0,0,.6)),
+url("titulo.jpeg") center/cover;
+display:flex;
+flex-direction:column;
+justify-content:center;
+align-items:center;
+text-align:center;
+padding:20px;
+}
+
+header h1{
+font-size:60px;
+margin-bottom:15px;
+}
+
+header p{
+font-size:20px;
+color:#ddd;
+}
+
+nav{
+display:flex;
+justify-content:center;
+gap:20px;
+padding:20px;
+background:#181818;
+position:sticky;
+top:0;
+}
+
+nav button{
+padding:12px 28px;
+font-size:16px;
+border:none;
+border-radius:30px;
+cursor:pointer;
+background:#444;
+color:white;
+transition:.3s;
+}
+
+nav button:hover,
+nav button.ativo{
+background: #000;
+}
+
+section{
+display:none;
+padding:40px;
+animation:fade .5s;
+}
+
+section.ativo{
+display:block;
+}
+
+@keyframes fade{
+from{
+opacity:0;
+transform:translateY(15px);
+}
+to{
+opacity:1;
+transform:translateY(0);
+}
+}
+
+h2{
+text-align:center;
+margin-bottom:40px;
+font-size:40px;
+color: #fff;
+}
+
+.categoria{
+margin-bottom:40px;
+}
+
+.categoria h3{
+margin-bottom:20px;
+font-size:28px;
+}
+
+.card{
+background:#1e1e1e;
+padding:20px;
+margin-bottom:15px;
+border-radius:15px;
+display:flex;
+justify-content:space-between;
+transition:.3s;
+}
+
+.card:hover{
+transform:scale(1.02);
+background:#292929;
+}
+
+footer{
+text-align:center;
+padding:25px;
+background:#181818;
+margin-top:30px;
+color:#aaa;
+}
+    
+.card{
+    background:#1e1e1e;
+    padding:20px;
+    margin-bottom:15px;
+    border-radius:15px;
+    display:flex;
+    align-items:center; 
+    gap:20px;           
+    transition:.3s;
+}
+
+.card img{
+    width:120px;
+    height:120px;
+    object-fit:cover;   
+    border-radius:12px;
+    flex-shrink:0;
+}
+
+.info{
+    flex:1;
+}
+
+.info h4{
+    font-size:22px;
+    margin-bottom:8px;
+}
+
+.info p{
+    font-size:18px;
+    color:#ddd;
+}
+    
+header img{
+    width:220px;
+    max-width:80%;
+    border-radius:50%;
+    margin-bottom:20px;
+    box-shadow:0 0 20px rgba(0,0,0,.5);
+}
+    
+.botao {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color:  #fff;;
+    color: black;
+    text-decoration: none;
+    border-radius: 8px;
+    font-size: 16px;
+    margin: 25px;
+}
+.botao{
+    display: inline-block;
+    background: linear-gradient(135deg, #000, #3d3d3d);
+    color: #fff;
+    text-decoration: none;
+    padding: 14px 30px;
+    border-radius: 40px;
+    border: 2px solid #7a7a7a;
+    font-size: 17px;
+    font-weight: bold;
+    transition: all 0.3s ease;
+    box-shadow: 0 6px 15px rgba(0,0,0,0.4);
+}
+
+.botao:hover{
+    background: linear-gradient(135deg, #ffffff, #d9d9d9);
+    color: #000;
+    border-color: #000;
+    transform: translateY(-4px) scale(1.03);
+    box-shadow: 0 10px 25px rgba(0,0,0,0.5);
+}
+
+.botao:active{
+    transform: scale(0.97);
+}
+
+</style>
+
+</head>
+
+<body>
+
+<header>
+
+<img src="https://i.postimg.cc/76Fyfgn3/IMG-20260702-WA0007.jpg" alt="Giman">
+
+<p>Experiência sofisticada em cada detalhe</p>
+    
+    <a href="pagprin.html" class="botao">Voltar para a Página Principal</a>
+    
+</header>
+
+<nav>
+
+<button class="ativo" data-aba="bebidas">Bebidas</button>
+
+<button data-aba="comidas">Comidas</button>
+
+</nav>
+
+<section id="bebidas" class="ativo">
+
+    <h2>Bebidas</h2>
+
+    <div class="categoria">
+        <h3>Drinks Clássicos</h3>
+
+        <div class="card">
+            <img src="https://www.tasteofhome.com/wp-content/uploads/2018/01/EXPS_TOHVP24_37188_MF_04_10_2.jpg?fit=750%2C750" alt="Mojito">
+            <div class="info">
+                <h4>Mojito</h4>
+                <p>R$ 28,00</p>
+            </div>
+        </div>
+
+        <div class="card">
+            <img src="https://images.ctfassets.net/hs93c4k6gio0/4LUP2ZKjjHLkBfapzY7jYg/2548bc586407761e2587b32dd336c149/_images_winter-spiced-negroni.jpg.jpg?fm=avif&q=60" alt="Negroni">
+            <div class="info">
+                <h4>Negroni</h4>
+                <p>R$ 32,00</p>
+            </div>
+        </div>
+
+        <div class="card">
+            <img src="https://cocktailteam.net/wp-content/uploads/elementor/thumbs/Cocktail-Old-Fashioned-1-plf05gryjtznvi1ngtltsk6pdojckskyjtetw5j5de.jpg" alt="Old Fashioned">
+            <div class="info">
+                <h4>Old Fashioned</h4>
+                <p>R$ 35,00</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="categoria">
+        <h3>Vinhos</h3>
+
+        <div class="card">
+            <img src="https://images.tcdn.com.br/img/img_prod/1122751/vinho_tinto_seco_argentino_reserva_de_los_andes_cabernet_sauvignon_183_1_d3c8b77f93638932ce2392ac828098f7.png" alt="Vinho Tinto Reserva">
+            <div class="info">
+                <h4>Vinho Tinto Reserva</h4>
+                <p>R$ 120,00</p>
+            </div>
+        </div>
+
+        <div class="card">
+            <img src="https://18666.cdn.simplo7.net/static/18666/sku/branco-seco-vinho-casa-perini-chardonnay-branco-750ml--p-1579801073183.jpg" alt="Vinho Branco Seco">
+            <div class="info">
+                <h4>Vinho Branco Seco</h4>
+                <p>R$ 95,00</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="categoria">
+        <h3>Cervejas</h3>
+
+        <div class="card">
+            <img src="https://res.cloudinary.com/piramides/image/upload/c_fill,h_564,w_395/v1/products/3328-heineken-long-neck-330ml-normal-24un.20251201102027.png?_a=BAAAV6GX" alt="Heineken">
+            <div class="info">
+                <h4>Heineken</h4>
+                <p>R$ 12,00</p>
+            </div>
+        </div>
+
+        <div class="card">
+            <img src="https://res.cloudinary.com/piramides/image/upload/c_fill,h_564,w_395/v1/products/11436-stella-artois-long-neck-330ml-24un.20251024104057.png?_a=BAAAV6GX" alt="Stella Artois">
+            <div class="info">
+                <h4>Stella Artois</h4>
+                <p>R$ 14,00</p>
+            </div>
+        </div>
+    </div>
+
+</section>
+
+<section id="comidas">
+
+    <h2>Comidas</h2>
+
+    <div class="categoria">
+        <h3>Entradas</h3>
+
+        <div class="card">
+            <img src="https://www.sabornamesa.com.br/media/k2/items/cache/2cf3de1421350014af841348e8a1b0fb_L.webp" alt="Bruschetta">
+            <div class="info">
+                <h4>Bruschetta</h4>
+                <p>R$ 25,00</p>
+            </div>
+        </div>
+
+        <div class="card">
+            <img src="https://s3.sa-east-1.amazonaws.com/site-canopus/canopus_blog_segredos_montar_tabua_frios_embutidos_3e838ad88e.png" alt="Tábua de Frios">
+            <div class="info">
+                <h4>Tábua de Frios</h4>
+                <p>R$ 60,00</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="categoria">
+        <h3>Pratos Principais</h3>
+
+        <div class="card">
+            <img src="https://cozinha365.com.br/wp-content/uploads/2025/02/File-Mignon-ao-Molho-Madeira-S-768x768.webp" alt="Filé Mignon ao Molho Madeira">
+            <div class="info">
+                <h4>Filé Mignon ao Molho Madeira</h4>
+                <p>R$ 75,00</p>
+            </div>
+        </div>
+
+        <div class="card">
+            <img src="https://cdn.casaeculinaria.com/wp-content/uploads/2023/10/13115444/Salmao-grelhado-1-600x400.webp" alt="Salmão Grelhado">
+            <div class="info">
+                <h4>Salmão Grelhado</h4>
+                <p>R$ 68,00</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="categoria">
+        <h3>Petiscos</h3>
+
+        <div class="card">
+            <img src="https://www.fashionismo.com.br/wp-content/uploads/2013/06/truffle-fries.png" alt="Batata Frita Trufada">
+            <div class="info">
+                <h4>Batata Frita Trufada</h4>
+                <p>R$ 30,00</p>
+            </div>
+        </div>
+
+        <div class="card">
+            <img src="https://pizzaparma.com.br/image/cache/catalog/produtos/isca-de-frango-350x350.png" alt="Iscas de Frango">
+            <div class="info">
+                <h4>Iscas de Frango</h4>
+                <p>R$ 28,00</p>
+            </div>
+        </div>
+    </div>
+
+</section>
+
+<footer>
+
+© 2026 Bar Giman
+
+</footer>
+
+<script>
+
+const botoes=document.querySelectorAll("nav button");
+const secoes=document.querySelectorAll("section");
+
+botoes.forEach(botao=>{
+
+botao.addEventListener("click",()=>{
+
+botoes.forEach(b=>b.classList.remove("ativo"));
+
+secoes.forEach(s=>s.classList.remove("ativo"));
+
+botao.classList.add("ativo");
+
+document.getElementById(botao.dataset.aba).classList.add("ativo");
+
+});
+
+});
+
+</script>
+
+</body>
+</html>
